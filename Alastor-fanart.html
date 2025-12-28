@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Alastor – Forest</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white px-6 max-w-5xl mx-auto">
+
+<a href="index.html" class="text-xs uppercase tracking-widest text-emerald-500">
+← Retour
+</a>
+
+<h1 class="text-5xl italic mt-12">Alastor</h1>
+
+<p class="text-gray-400 mt-6 max-w-2xl">
+Fan Art du personnage Alastor de la serie Hazbin Hotel.
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+    <img src="IMG_0440.PNG" class="rounded-xl cursor-pointer" onclick="openLightbox(this.src)">
+</div>
+
+<div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center" onclick="this.classList.add('hidden')">
+    <img id="lightbox-img" class="max-h-[90vh]">
+</div>
+
+<script>
+function openLightbox(src){
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
